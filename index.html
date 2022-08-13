@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d51f589380.js"></script>
+    <title>Fluent Flashcard</title>
+</head>
+<body>
+    
+    <div class="fluent__container">
+        <div class="fluent__content">
+            <h3 class="fluent__flashcard-title">فلش کارت های دوره رایگان</h3>
+            <button class="fluent__begin button">شروع</button>
+            <div class="fluent__info">
+                <div class="info">
+                    <h4 class="info__title">کل</h4>
+                    <p>1800 + <strong>85</strong></p>
+                </div>
+                <div class="info">
+                    <h4 class="info__title">امروز</h4>
+                    <p>200 + <strong>85</strong></p>
+                </div>
+            </div>
+           <div class="plus__button-wrapper">
+                <div class="icon plus">
+                    <div class="tooltip">اضافه کردن فلش کارت</div>
+                    <span><i class="fa-solid fa-plus"></i></span>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <!-- 
+        <div class="fluent__modal" id="fluent__modal">
+        <div class="fluent__modal-content">
+            <i class="fa-solid fa-xmark close" onclick="CloseModal()"></i>
+            <p class="fluent__modal-text">به صورت پیشفرض ما ۲۰۰ عدد فلش‌کارت برای شما در نظر گرفتیم شما میتوانید این مقدار را به صورت دلخواه تغییر دهید</p>
+            <div class="fluent__counters">    
+                <div class="counter__container">
+                    <p class="new-flashcards-text">تعداد فلش کارت‌های جدید</p>
+                    <div class="first__counter">
+                        <button class="fluent__decrement" id="decrement" onclick="stepper(this)"> <i class="fa-solid fa-minus"></i> </button>
+                        <input type="number" min="20" max="900" step="1" value="20" id="stepper-input" readonly>
+                        <button class="fluent__increment" id="increment" onclick="stepper(this)"> <i class="fa-solid fa-plus"></i> </button>
+                    </div>
+                </div>
+                <div class="second__counter__container">
+                    <p class="old-flashcards-text">تعداد فلش کارت‌های تکراری</p>
+                    <div class="second__counter">
+                        <button class="fluent__decrement" id="decrement" onclick="secondstepper(this)"> <i class="fa-solid fa-minus"></i> </button>
+                        <input type="number" min="20" max="900" step="1" value="20" id="second__stepper-input" readonly>
+                        <button class="fluent__increment" id="increment" onclick="secondstepper(this)"> <i class="fa-solid fa-plus"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <button class="save-button">ذخیره</button>
+        </div>
+    </div>
+     -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

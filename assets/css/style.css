@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --persian-font: IRANSans;
+    --english-font: 'Poppins', sans-serif;
+    --english-font-weight: 500;
+    --persian-font-weight: 600;
+
+    --primary-color: #6205ED;
+    --secondary-color: #8505CA;
+    --third-color: #A705A7;
+    --fourth-color: #CA0483;
+    --fifth-color: #EC0460;
+}
+@font-face {
+    font-family: IRANSans;
+    src: url(IRANSans.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+body, button {
+    font-family: var(--persian-font);
+    font-weight: var(--persian-font-weight);
+}
+body {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fluent__container {
+    position: relative;
+    background-color: #FFF;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: .3s;
+}
+.fluent__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+.fluent__flashcard-title {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.fluent__info {
+    padding-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.info__title {
+    font-size: 1.3rem;
+    background-color: var(--primary-color);
+    color: #FFF;
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    padding: 5px;
+}
+.info p {
+    font-size: 1.1rem;
+    background-color: #e5e5e5;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+}
+.info p strong {
+    color: #0fb956;
+}
+.plus__button-wrapper {
+    display: inline-flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+.plus__button-wrapper .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.plus__button-wrapper .icon span {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background-color: #FFF;
+    border-radius: 50%;
+    z-index: 2;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.plus__button-wrapper .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+    color: var(--primary-color);
+}
+.plus__button-wrapper .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    background-color: #FFF;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+.plus__button-wrapper .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.plus__button-wrapper .icon .tooltip:before {
+    background-color: #FFF;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.plus__button-wrapper .icon:hover span, .plus__button-wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.button {
+    background-color: var(--primary-color);
+    color: #FFF;
+    outline: none;
+    border: none;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.button:hover {
+    background-color: var(--third-color);
+    transform: scale(1.1);
+}
+@media (max-width: 480px) {
+    .fluent__container {
+        width: 90vw;
+        height: 400px;
+    }
+}
